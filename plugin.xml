@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-googleplus"
-        version="5.3.0">
+        id="cordova-plugin-googleplus-fix"
+        version="5.3.1">
 
   <name>Google SignIn</name>
 
-  <description>Use your Google account to authenticate with the app.</description>
+  <description>Use your Google account to authenticate with the app. Fixed for working with other plugins like Cordova Firebase</description>
 
   <author>Eddy Verbruggen</author>
 
   <license>MIT</license>
 
-  <keywords>Google, Google SignIn, GoogleSignIn, Google Login, Login, OAuth, Identity, Authentication</keywords>
+  <keywords>Google, Google SignIn, GoogleSignIn, Google Login, Login, OAuth, Identity, Authentication, Google Login Fix</keywords>
 
-  <repo>https://github.com/EddyVerbruggen/cordova-plugin-googleplus.git</repo>
+  <repo>https://github.com/skopa/cordova-plugin-googleplus-fix.git</repo>
 
-  <issue>https://github.com/EddyVerbruggen/cordova-plugin-googleplus/issues</issue>
+  <issue>https://github.com/skopa/cordova-plugin-googleplus-fix/issues</issue>
 
   <engines>
     <engine name="cordova" version=">=3.5.0"/>

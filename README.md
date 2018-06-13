@@ -99,13 +99,13 @@ Here's how it works (backup your project first!):
 
 Using the Cordova CLI and [npm](https://www.npmjs.com/package/cordova-plugin-googleplus):
 ```
-$ cordova plugin add cordova-plugin-googleplus --save --variable REVERSED_CLIENT_ID=myreversedclientid --variable WEB_APPLICATION_CLIENT_ID=mywebapplicationclientid
+$ cordova plugin add cordova-plugin-googleplus-fix --save --variable REVERSED_CLIENT_ID=myreversedclientid --variable WEB_APPLICATION_CLIENT_ID=mywebapplicationclientid
 $ cordova prepare
 ```
 
 Using the Cordova CLI to fetch the latest version from GitHub:
 ```
-$ cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-googleplus --save --variable REVERSED_CLIENT_ID=myreversedclientid  --variable WEB_APPLICATION_CLIENT_ID=mywebapplicationclientid
+$ cordova plugin add https://github.com/skopa/cordova-plugin-googleplus-fix --save --variable REVERSED_CLIENT_ID=myreversedclientid  --variable WEB_APPLICATION_CLIENT_ID=mywebapplicationclientid
 $ cordova prepare
 ```
 
@@ -124,7 +124,7 @@ Add this to your config.xml:
 
 For the (stable) NPM Version:
 ```xml
-<plugin name="cordova-plugin-googleplus" source="npm">
+<plugin name="cordova-plugin-googleplus-fix" source="npm">
   <variable name="REVERSED_CLIENT_ID" value="myreversedclientid" />
   <variable name="WEB_APPLICATION_CLIENT_ID" value="mywebapplicationclientid" />
 </plugin>
@@ -132,7 +132,7 @@ For the (stable) NPM Version:
 
 For the latest version from Git (not recommended):
 ```xml
-<plugin spec="https://github.com/EddyVerbruggen/cordova-plugin-googleplus.git" source="git">
+<plugin spec="https://github.com/skopa/cordova-plugin-googleplus.git" source="git">
   <variable name="REVERSED_CLIENT_ID" value="myreversedclientid" />
   <variable name="WEB_APPLICATION_CLIENT_ID" value="mywebapplicationclientid" />
 <plugin>
@@ -289,6 +289,7 @@ As stated before, this plugin is all about user authentication and identity, so 
 - A: Make sure you are using a Virtual Device running with a **Google APIs target and/or a Google APIs CPU**!
 
 ## 10. Changelog
+- 5.3.1: Fix with Google Play Service version compatibility (API 15+).
 - 5.3.0: Browser platform added.
 - 5.0.3: Added the convenience method `getSigningCertificateFingerprint` to retrieve the Android cert fingerprint which is required in the Google Developer Console.
 - 5.0.2: Require linking against `SafariServices` and `CoreText` frameworks on iOS as per Google's recommendation. Added `loginHint` on iOS.

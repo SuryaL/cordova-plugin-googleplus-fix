@@ -2,6 +2,8 @@
 by [Eddy Verbruggen](http://twitter.com/eddyverbruggen),
 with great assistance from Sam Muggleworth ([PointSource, LLC](https://github.com/PointSource))
 
+##### fixed play-services version locking.
+
 ## 0. Index
 
 1. [Description](#1-description)
